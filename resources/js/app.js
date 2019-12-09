@@ -4,4 +4,15 @@
  * application frontend using useful Laravel and JavaScript libraries.
  */
 
-require('./bootstrap');
+import './bootstrap';
+import Vue from 'vue';
+import Vuetify from 'vuetify';
+
+// import Routes from '../js/routes/routes.js';
+
+Vue.use(Vuetify);
+
+const app = new Vue({
+    el: '#app',
+    // router : Routes
+});
