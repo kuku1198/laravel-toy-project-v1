@@ -1,11 +1,5 @@
 const mix = require('laravel-mix');
 
-mix.webpackConfig({
-    resolve : {
-        extenions: ['.js', '.vue']
-    }
-});
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
