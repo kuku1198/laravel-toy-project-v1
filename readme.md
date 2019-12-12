@@ -4,7 +4,7 @@
   - ...
 - Structure
   - MVCS Design pattern
+  - Repository Design Pattern
 - Requirement
-  - php 7.4
-  - laravel 6.5.0
-  - ...
+  - php : 7.4
+  - laravel : ^6.0
