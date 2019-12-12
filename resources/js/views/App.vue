@@ -1,7 +1,14 @@
 <template>
-    <div>test</div>
+    <Dark></Dark>
 </template>
 
 <script>
-    export default {};
+    import Dark from '../layouts/dark';
+    import Home from '../components/Home';
+
+    export default {
+        components: {
+            Dark, Home
+        }
+    };
 </script>
