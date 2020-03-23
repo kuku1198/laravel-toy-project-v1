@@ -1,7 +1,5 @@
-## To Do List
-
 - Description
-  - ...
+  - To Do List
 - Structure
   - MVCS Design pattern
   - Repository Design Pattern
