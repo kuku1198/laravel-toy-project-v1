@@ -15,4 +15,6 @@
 //    return view('index');
 //});
 
-Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
+Route::get('{path}', function () {
+    return view('app');
+})->where('path', '(.*)');
