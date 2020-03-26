@@ -1,8 +1,10 @@
 import './bootstrap';
 import Vue from 'vue';
 import vuetify from '../js/plugins/vuetify';
-import routes from '../js/routes/routes';
+import routes from './routes';
 import App from '../js/views/App';
+
+Vue.config.productionTip = false;
 
 const app = new Vue({
     el: '#app',
