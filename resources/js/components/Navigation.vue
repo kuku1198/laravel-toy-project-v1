@@ -1,6 +1,6 @@
 <template>
     <v-navigation-drawer
-            v-model="drawer"
+            v-model="isDrawer"
             app
             clipped
     >
@@ -10,7 +10,7 @@
                     <v-icon>mdi-view-dashboard</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                    <v-list-item-title>Dashboard</v-list-item-title>
+                    <v-list-item-title>1</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
             <v-list-item link>
@@ -18,7 +18,7 @@
                     <v-icon>mdi-settings</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                    <v-list-item-title>Settings</v-list-item-title>
+                    <v-list-item-title>2</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
         </v-list>
@@ -27,5 +27,8 @@
 
 <script>
     export default {
+        props: {
+            isDrawer: Boolean,
+        }
     }
 </script>

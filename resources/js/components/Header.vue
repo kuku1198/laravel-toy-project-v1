@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <Navigation></Navigation>
+        <Navigation v-bind:is-drawer=drawer></Navigation>
 
         <v-app-bar
                 app
@@ -19,8 +19,10 @@
         components: {
             Navigation
         },
-        data: () => ({
-            drawer: null,
-        })
+        data: function () {
+            return {
+                drawer: false
+            }
+        }
     }
 </script>
