@@ -1,14 +1,20 @@
 <template>
-    <Dark></Dark>
+    <v-app>
+        <Header></Header>
+        <Footer></Footer>
+    </v-app>
 </template>
 
 <script>
-    import Dark from '../layouts/dark';
-    import Home from '../components/Home';
+    import Header from '../components/Header';
+    import Footer from '../components/Footer';
 
     export default {
         components: {
-            Dark, Home
-        }
+            Header, Footer
+        },
+        created() {
+            this.$vuetify.theme.dark = true
+        },
     };
 </script>
