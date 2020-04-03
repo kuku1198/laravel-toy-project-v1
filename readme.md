@@ -1,2 +1,5 @@
 - Description
-  - To Do List
+    - To Do List with Laravel and Vue.js 
+- Requiremens
+    - php: ^7.4
+- Installation
