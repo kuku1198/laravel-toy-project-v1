@@ -2,7 +2,7 @@
     <v-row align="center" justify="center">
         <v-col cols="12" sm="8" md="4">
             <v-card class="elevation-12">
-                <v-toolbar color="red" dark flat>
+                <v-toolbar color="green" dark flat>
                     <v-toolbar-title>Sing Up</v-toolbar-title>
                 </v-toolbar>
                 <v-card-text>
@@ -25,7 +25,7 @@
                 </v-card-text>
                 <v-card-actions>
                     <v-spacer />
-                    <v-btn color="red">sing up</v-btn>
+                    <v-btn color="green">sing up</v-btn>
                 </v-card-actions>
             </v-card>
         </v-col>
