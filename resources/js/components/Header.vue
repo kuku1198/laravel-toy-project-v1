@@ -4,9 +4,15 @@
 
         <v-app-bar app clipped-left>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-            <v-toolbar-title>To Do List</v-toolbar-title>
+            <v-toolbar-title>
+                <router-link
+                    to="/"
+                    style="color: white; text-decoration: none;"
+                >
+                    To Do List
+                </router-link>
+            </v-toolbar-title>
             <v-spacer></v-spacer>
-
             <v-btn icon to="/user/login">
                 <v-icon title>mdi-login</v-icon>
                 <!--                <v-icon>mdi-logout</v-icon>-->
@@ -20,11 +26,11 @@
 </template>
 
 <script>
-import navigation from './Navigation';
+import Navigation from './Navigation';
 
 export default {
     components: {
-        navigation,
+        Navigation,
     },
     data() {
         return {
