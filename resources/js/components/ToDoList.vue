@@ -7,7 +7,12 @@
                 </v-toolbar>
                 <v-card-text>
                     <v-form>
-                        <v-text-field name="eamil" type="text" />
+                        <v-text-field
+                            name="item"
+                            type="text"
+                            v-model="item"
+                            @keyup.enter="setItem"
+                        />
                     </v-form>
                 </v-card-text>
                 <v-card-actions>
@@ -36,15 +41,13 @@
 <script>
 export default {
     data: () => ({
-        items: [
-            { text: 'Real-Time' },
-            { text: 'Audience' },
-            { text: 'Conversions' },
-        ],
+        item: '',
+        items: [],
     }),
     methods: {
         setItem() {
-            this.items.push({ text: 'test' });
+            this.items.push({ text: this.item });
+            this.item = '';
         },
     },
 };
